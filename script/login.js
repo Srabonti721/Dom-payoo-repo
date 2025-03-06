@@ -6,12 +6,12 @@ document.getElementById('login-btn').addEventListener('click', function (event) 
     const convertedpin = parseInt(pin)
     if (accountNumber.length === 11) {
         if (convertedpin === 1234) {
-            console.log('pin thik ase');
+      window.location.href='./main.html'
         } else {
-            console.log('pin thik nai')
+            alert('pin thik nai')
         }
     }
     else {
-        console.log('need a valid account number');
+      alert('need a valid account number');
     }
 })
